@@ -38,7 +38,7 @@ export function Header(props: Props) {
     <Flex
       as="header"
       className={className}
-      bg={useColorModeValue("gray.50", "gray.900")}
+      bg={useColorModeValue("white", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
       opacity={1}
       px={4}
@@ -62,7 +62,7 @@ export function Header(props: Props) {
           _hover={{
             textDecoration: "none",
             color: useColorModeValue("gray.800", "white"),
-            bg: useColorModeValue("green.200", "green.900"),
+            bg: useColorModeValue("orange.200", "orange.900"),
           }}
         >
           <Logo />
@@ -98,7 +98,7 @@ const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
   const linkHoverColor = useColorModeValue("gray.800", "white");
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
-  const linkHoverBackgroundColor = useColorModeValue("blue.200", "blue.900");
+  const linkHoverBackgroundColor = useColorModeValue("orange.200", "orange.900");
   return (
     <Stack direction={"row"} spacing={8}>
       {NAV_ITEMS.map((navItem) => (
@@ -154,13 +154,13 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
+      _hover={{ bg: useColorModeValue("orange.50", "gray.900") }}
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text
             transition={"all .3s ease"}
-            _groupHover={{ color: "pink.400" }}
+            _groupHover={{ color: "orange.400" }}
             fontWeight={500}
           >
             {label}
@@ -176,7 +176,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
           align={"center"}
           flex={1}
         >
-          <Icon color={"pink.400"} w={5} h={5} as={ChevronRightIcon} />
+          <Icon color={"orange.400"} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
     </Link>

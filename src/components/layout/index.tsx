@@ -28,11 +28,11 @@ export function Layout(props: Props) {
       <Box
         margin="0 auto"
         minH="100vh"
-        bg={useColorModeValue("gray.100", "gray.900")}
-        css={{
-          backgroundImage: useColorModeValue(CONFETTI_LIGHT, CONFETTI_DARK),
-          backgroundAttachment: "fixed",
-        }}
+        bg={useColorModeValue("orange.400", "orange.700")}
+        // css={{
+        //   backgroundImage: useColorModeValue(CONFETTI_LIGHT, CONFETTI_DARK),
+        //   backgroundAttachment: "fixed",
+        // }}
       >
         <Header />
         <Container maxW="container.md">{props.children}</Container>

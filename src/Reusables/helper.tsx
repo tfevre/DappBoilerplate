@@ -16,10 +16,10 @@ export const Logo = (props: any) => {
           width={8}
           height={8}
           alt={"Login Image"}
-          objectFit={"cover"}
+          objectFit={"contain"}
           src={"/logo.png"}
         />
-        <Text as="kbd">DappBoilerplate</Text>
+        <Text as="kbd">Le Club Metadev3</Text>
       </>
     </HStack>
   );
