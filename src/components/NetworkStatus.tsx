@@ -4,11 +4,9 @@ import { useBlockNumber, useNetwork } from 'wagmi'
 import { LinkComponent } from './LinkComponent'
 
 function GetNetworkColor(chain?: string) {
-  if (chain === 'homestead') return 'green'
-  if (chain === 'arbitrum') return 'blue'
-  if (chain === 'optimism') return 'red'
+  if (chain === 'homestead') return 'yellow'
   if (chain === 'polygon') return 'purple'
-  if (chain === 'goerli') return 'yellow'
+  if (chain === 'polygonMumbai') return 'violet'
   if (chain === 'sepolia') return 'orange'
   return 'grey'
 }
@@ -20,7 +18,7 @@ export function NetworkStatus() {
   return (
     <Flex alignItems="center" gap={2}>
       <Badge colorScheme={GetNetworkColor(network.chain?.network)} fontSize="2xs">
-        {network.chain?.name ?? 'Ethereum'}
+        {network.chain?.name ?? ''}
       </Badge>
 
       {explorerUrl && (

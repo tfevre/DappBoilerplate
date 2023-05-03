@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://github.com/JalelTounsi/DappBoilerplate">Le Club Metadev3</a>
+          Welcome to <a href="https://github.com/metadev3">Le Club Metadev3</a>
         </h1>
         <p className={styles.description}>
           Connect your wallet and start playing around
